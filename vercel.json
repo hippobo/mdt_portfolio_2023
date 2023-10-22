@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "build": {
+      "env": {
+        "NODE_OPTIONS": "--openssl-legacy-provider"
+      }
+    },
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/$1"
+      }
+    ],
+    "env": {
+      "CUSTOM_ENV_VARIABLE": "my_value"
+    }
+  }
+  
